@@ -5,6 +5,9 @@ jobs:
     firstjob:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
+
         - name: weclome message
           uses: echo "my first github actions file"
 
